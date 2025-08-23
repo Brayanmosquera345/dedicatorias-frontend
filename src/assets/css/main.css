@@ -1,0 +1,24 @@
+
+/* Importar la fuente Satoshi */
+@import '../fonts/satoshi/satoshi.css';
+
+/* Importar Tailwind CSS */
+@import "tailwindcss";
+
+
+@theme {
+
+    /* Configurar Satoshi como fuente personalizada */
+    --font-satoshi: "Satoshi", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    
+    /* Reemplazar la fuente sans por defecto con Satoshi */
+    --font-sans: "Satoshi", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+    --color-primary: #E23A73;
+    --color-primary-1000: #170C10;
+    --color-secondary: #5F89BF;
+    --color-background: #0F0F0F;
+    --color-title: #E6E5E5;
+    --color-paragraph: #A8A8A8;
+    --color-divider: #343434;
+}
