@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import Button from "../components/buttons/button";
+import Button from "../components/Buttons/button";
 import LogoIcon from "../components/icons/LogoIcon";
 import CheckIcon from "../components/icons/CheckIcon";
 import LinkIcon from "../components/icons/LinkIcon";

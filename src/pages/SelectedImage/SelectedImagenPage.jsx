@@ -1,7 +1,7 @@
 import { Link, useNavigate } from "react-router-dom";
 import { useState, useRef, useEffect } from "react";
 
-import Button from "../../components/buttons/button";
+import Button from "../../components/Buttons/button";
 import Input from "../../components/Inputs/Input";
 import ImageOption from "../../components/Image/ImagenOption";
 import { useSearchPhotos } from "../../hooks/useSearchPhotos";

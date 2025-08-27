@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 import LogoIcon from "../icons/LogoIcon";
-import Button from "../buttons/button";
+import Button from "../Buttons/button";
 import MenuIcon from "../icons/MenuIcon";
 import CloseIcon from "../icons/CloseIcon";
 

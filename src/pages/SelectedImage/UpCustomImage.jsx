@@ -2,7 +2,7 @@ import { useState } from "react";
 
 import Input from "../../components/Inputs/Input";
 import ImageOption from "../../components/Image/ImagenOption";
-import Button from "../../components/buttons/button";
+import Button from "../../components/Buttons/button";
 import useCreateDedicationStore from "../../store/createDedicationStore";
 import Error from "../../components/Error/Error";
 import Empty from "../../components/Empty/Empty";
