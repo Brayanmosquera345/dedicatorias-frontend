@@ -13,11 +13,20 @@ import Error from "../../components/Error/Error";
 import Notification from "../../components/Notification/Notification";
 
 export default function SelectedSongPage() {
-
   const navigate = useNavigate();
 
   const [searchQuery, setSearchQuery] = useState("");
   const [notification, setNotification] = useState(null); // {title, message}
+  // SelectedSongPage.jsx
+  const [currentPlayingId, setCurrentPlayingId] = useState(null);
+
+function handlePlaySong(id) {
+  if (currentPlayingId === id) {
+    setCurrentPlayingId(null);
+  } else {
+    setCurrentPlayingId(id);
+  }
+}
 
   const {
     data: listSong,
@@ -67,7 +76,8 @@ export default function SelectedSongPage() {
             Selecciona una canción
           </h1>
           <p className="text-paragraph text-center">
-            Selecciona la canción que exprese tus sentimientos y haga único este momento.
+            Selecciona la canción que exprese tus sentimientos y haga único este
+            momento.
           </p>
           {isError ? (
             <section className="flex justify-center items-center min-h-96">
@@ -100,11 +110,14 @@ export default function SelectedSongPage() {
                     listSong?.map((song, index) => (
                       <Song
                         key={index}
+                        id={song.id}
                         songURL={song.song_url}
                         title={song.title}
                         artist={song.artist}
                         image={song.image}
                         selected={song_id === song.id}
+                        isPlaying={currentPlayingId === song.id}
+                        onPlay={() => handlePlaySong(song.id)} 
                         onSelectSong={() => selectedSong(song)}
                       />
                     ))
@@ -121,13 +134,13 @@ export default function SelectedSongPage() {
                     size="lg"
                   />
                 </Link>
-                  <Button
-                    text="Siguiente"
-                    variant="primary"
-                    className="w-full md:w-auto"
-                    size="lg"
-                    onClick={handleNext}
-                  />
+                <Button
+                  text="Siguiente"
+                  variant="primary"
+                  className="w-full md:w-auto"
+                  size="lg"
+                  onClick={handleNext}
+                />
               </footer>
             </section>
           )}

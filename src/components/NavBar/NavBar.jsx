@@ -69,32 +69,27 @@ export default function NavBar() {
 
         {/* Mobile Menu Overlay */}
         {isMenuOpen && (
-          <div className="md:hidden absolute top-full left-0 right-0 mt-2 bg-divider/40 backdrop-blur-xl backdrop-saturate-180 rounded-xl z-20">
-            <div
-              className="absolute inset-0 pointer-events-none opacity-50 h-full w-full"
-              style={{
-                backgroundImage: `url("https://res.cloudinary.com/dlmhszrtv/image/upload/v1755870551/Noise_qdazex.png")`,
-              }}
-            />
+          <div className="md:hidden absolute top-full left-0 right-0 mt-2 bg-divider/90 backdrop-blur-xl backdrop-saturate-180 rounded-xl z-20">
+            <div className="glass"></div>
             <div className="relative z-10 p-4 space-y-4">
               <a
                 href="#hero"
                 onClick={closeMenu}
-                className="block text-paragraph hover:text-primary transition-colors duration-200 py-2"
+                className="block text-title hover:text-primary transition-colors duration-200 py-2"
               >
                 Inicio
               </a>
               <a
                 href="#funtionamiento"
                 onClick={closeMenu}
-                className="block text-paragraph hover:text-primary transition-colors duration-200 py-2"
+                className="block text-title hover:text-primary transition-colors duration-200 py-2"
               >
                 ¿Como funciona?
               </a>
               <a
                 href="#example"
                 onClick={closeMenu}
-                className="block text-paragraph hover:text-primary transition-colors duration-200 py-2"
+                className="block text-title hover:text-primary transition-colors duration-200 py-2"
               >
                 Ejemplo
               </a>

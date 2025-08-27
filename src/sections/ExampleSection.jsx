@@ -15,7 +15,7 @@ export default function ExampleSection() {
           message="Una vida a tu lado es un sueño, un sueño que disfruto cada día. Te amo."
           author="Brayan Mosquera"
           image="https://images.pexels.com/photos/14137216/pexels-photo-14137216.jpeg"
-          songURL="https://res.cloudinary.com/dlmhszrtv/video/upload/v1756224452/Te_amo_Te_extra%C3%B1o-_Guayac%C3%A1n_Orquesta_-_Guayac%C3%A1n_Orquesta_Oficial_famhr7.mp3"
+          songURL="https://res.cloudinary.com/dlmhszrtv/video/upload/v1756325190/Te_amo_Te_extra%C3%B1o-30_s_zz2agb.mp3"
           title="Te amo, Te extraño"
           artist="Guayacán Orquesta"
         />
