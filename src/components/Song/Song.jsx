@@ -2,7 +2,7 @@ import { useRef, useState } from "react";
 import PlayIcon from "../icons/PlayIcon";
 import PauseIcon from "../icons/PauseIcon";
 
-export default function Song({ title, artist, image, selected = false, songURL= 'https://samplelib.com/lib/preview/mp3/sample-15s.mp3' }) {
+export default function Song({ title, artist, image, selected = false, songURL, onSelectSong }) {
   const audioRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(false);
 
@@ -20,9 +20,10 @@ export default function Song({ title, artist, image, selected = false, songURL= 
 
   return (
     <div
-      className={`flex justify-between items-center border rounded-lg p-2 ${
+      className={`flex justify-between items-center border rounded-lg p-2 cursor-pointer hover:bg-divider/30 transition-colors duration-200 ${
         selected ? "border-primary" : "border-transparent"
       }`}
+      onClick={() => onSelectSong()}
     >
       <div className="flex items-center gap-4">
         <img

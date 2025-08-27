@@ -14,11 +14,17 @@ export default function DedicationCard({
       <div className="z-30 size-full relative flex flex-col justify-between py-6">
         <header className="flex flex-col items-center gap-2 w-full text-center">
           <LogoIcon size={40} />
-          <p className="text-title font-semibold text-lg max-w-3/4">"{message}"</p>
+          <p className="text-title font-semibold text-lg max-w-3/4">
+            "{message}"
+          </p>
           <p className="text-paragraph">- {author}</p>
         </header>
         <footer className="flex flex-col items-center gap-2 w-full text-center">
-          <ReproductorSong songURL={songURL} songTitle={title} artist={artist} />
+          <ReproductorSong
+            songURL={songURL}
+            songTitle={title}
+            artist={artist}
+          />
         </footer>
       </div>
       <div
@@ -28,7 +34,11 @@ export default function DedicationCard({
         }}
       ></div>
       <div className="size-full inset-0 absolute bg-divider/50 z-10"></div>
-      <img src={image} alt={title} className="size-full absolute object-cover inset-0" />
+      <img
+        src={image}
+        alt={title}
+        className="size-full absolute object-cover inset-0"
+      />
     </div>
   );
 }

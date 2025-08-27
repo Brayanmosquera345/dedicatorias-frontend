@@ -1,6 +1,6 @@
-export default function Input({ placeholder, label, type= "text", value, onChange }) {
+export default function Input({ placeholder, label, type= "text", value, onChange, className }) {
   return (
-    <div className="flex flex-col gap-2">
+    <div className={`flex flex-col gap-2 ${className}`}>
         <label className="text-paragraph font-medium">{label}</label>
         <input
           type={type}

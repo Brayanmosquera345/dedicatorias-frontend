@@ -20,12 +20,7 @@ export default function NavBar() {
   return (
     <header className="p-4 sticky top-0 z-50">
       <nav className="relative py-4 px-4 bg-divider/40 rounded-xl backdrop-blur-xl backdrop-saturate-180">
-        <div
-          className="absolute inset-0 pointer-events-none opacity-50 h-full w-full"
-          style={{
-            backgroundImage: `url("https://res.cloudinary.com/dlmhszrtv/image/upload/v1755870551/Noise_qdazex.png")`,
-          }}
-        />
+        <div className="glass"></div>
 
         {/* Desktop Navigation */}
         <nav className="flex justify-between items-center w-full z-10 relative">

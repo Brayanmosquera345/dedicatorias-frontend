@@ -1,7 +1,8 @@
-export default function Button({ text, variant="primary", size="md", className }) {
+import LoaderIcon from '../icons/LoaderIcon'
+export default function Button({ text, variant="primary", size="md", className, onClick, isLoading= false, iconRight }) {
 
   const buttonClass = ()=>{
-    let base = "rounded-lg font-medium text-md cursor-pointer hover:shadow"
+    let base = "rounded-lg font-medium text-md cursor-pointer hover:shadow flex items-center justify-center"
     let variantClass = "";
     let sizeClass = "";
 
@@ -34,8 +35,33 @@ export default function Button({ text, variant="primary", size="md", className }
   }
 
   return (
-    <button className={buttonClass()}>
-      {text}
+    <button className={buttonClass()} onClick={onClick}>
+      {
+        isLoading? (
+          <span className="flex items-center gap-2">
+            <LoaderIcon size={24} /> 
+            Procesando...
+          </span>
+        ):(
+          <>
+            {
+              iconRight && (
+                <span className="flex items-center gap-2">
+                  {text}
+                  {iconRight}
+                </span>
+              )
+            }
+            {
+              !iconRight && (
+                <span className="flex items-center gap-2">
+                  {text}
+                </span>
+              )
+            }
+          </>
+        )
+      }
     </button>
   );
 }

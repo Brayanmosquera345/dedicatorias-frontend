@@ -9,7 +9,8 @@ export default function HeroSection() {
       className="flex flex-col justify-center items-center w-full text-center space-y-8 py-12"
     >
       <div className="space-y-2">
-        <h1 className="text-6xl md:text-7xl font-sans font-black bg-gradient-to-r from-title via-primary to-secondary bg-clip-text text-transparent max-w-6xl">
+        <h1
+          className="text-4xl md:text-5xl lg:text-7xl font-sans font-black bg-gradient-to-r from-title via-primary to-secondary bg-clip-text text-transparent max-w-6xl">
           Crea dedicatorias únicas que conquisten corazones
         </h1>
         <p className="text-paragraph text-md">
