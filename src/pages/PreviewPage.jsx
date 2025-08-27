@@ -2,7 +2,7 @@ import { Link, useNavigate } from "react-router-dom";
 import DedicationService from "../services/dedication.service";
 import { useState } from "react";
 
-import Button from "../components/Buttons/button";
+import Button from "../components/Buttons/Button";
 import DedicationCard from "../components/DedicationCard/DedicationCard";
 import Notification from "../components/Notification/Notification";
 import useCreateDedicationStore from "../store/createDedicationStore";

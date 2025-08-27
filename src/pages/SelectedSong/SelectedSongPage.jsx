@@ -1,7 +1,7 @@
 import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 
-import Button from "../../components/Buttons/button";
+import Button from "../../components/Buttons/Button";
 import Input from "../../components/Inputs/Input";
 import Song from "../../components/Song/Song";
 import { useSearchSongsManual } from "../../hooks/useSearchSong";

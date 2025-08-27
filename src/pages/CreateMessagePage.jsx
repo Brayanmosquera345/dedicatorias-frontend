@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 
-import Button from "../components/Buttons/button";
+import Button from "../components/Buttons/Button";
 import Textarea from "../components/Textarea/Textarea";
 import Input from "../components/Inputs/Input";
 import useCreateDedicationStore from "../store/createDedicationStore";
