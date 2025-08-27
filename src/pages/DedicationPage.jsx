@@ -6,7 +6,7 @@ import FloatingHearts from "../components/FloatingHearts/FloatingHearts";
 import Footer from "../components/footer/Footer";
 import DedicationLoader from "../components/DedicationCard/Dedicationloader";
 import Error from "../components/Error/Error";
-import Button from "../components/Buttons/button";
+import Button from "../components/Buttons/Button";
 
 export default function DedicationPage() {
   const { id } = useParams();
